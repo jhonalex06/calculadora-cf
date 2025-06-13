@@ -9,19 +9,19 @@ jobs:
     runs-on: ubuntu-lastest
 
     steps:
-      - name: Checkout copy of repo
-        uses: actions/checkout@v4.2.2
+    - name: Checkout copy of repo
+      uses: actions/checkout@v4.2.2
 
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '9.0.x'
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
 
-      - name: Install dependencies
-        run: dotnet restore
+    - name: Install dependencies
+      run: dotnet restore
 
-      - name: Compile
-        run: dotnet build --no-restore
+    - name: Compile
+      run: dotnet build --no-restore
 
   create-pdf:
     runs-on: ubuntu-latest
