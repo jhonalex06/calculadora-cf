@@ -6,7 +6,7 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout copy of repo
