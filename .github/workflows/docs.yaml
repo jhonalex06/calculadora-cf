@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Say Hey
+      uses: jhonalex06/hello-world-javascript-action-by-jhonsi@v1.0
+      with:
+        who-to-greet: Pitu
+
     - name: Checkout copy of repo
       uses: actions/checkout@v4.2.2
 
